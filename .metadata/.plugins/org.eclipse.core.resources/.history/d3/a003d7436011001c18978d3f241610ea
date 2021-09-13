@@ -1,0 +1,64 @@
+package com.tcs.delta.billing;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterGroups;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Launch{
+	@BeforeSuite
+	public void sample1() {
+		System.out.println("Before Suite");
+	}
+	@AfterSuite
+	public void sample2() {
+		System.out.println("After Suite");
+	}
+	@BeforeClass
+	public void sample3() {
+		System.out.println("Before Class");
+	}
+	@AfterClass
+     public void sample4() {
+		System.out.println("After class");
+	}
+	@BeforeGroups
+	public void sample5() {
+		System.out.println("Before Group");
+	}
+	@AfterGroups
+	public void sample6() {
+		System.out.println("After Groups");
+	}
+	@AfterMethod
+	public void sample7() {
+		System.out.println("After Method");
+	}
+	@BeforeMethod
+	public void sample8() {
+		System.out.println("Before Method");
+	}
+	@BeforeTest
+	public void sample9() {
+		System.out.println("Before Test");
+	}
+	@AfterTest
+	public void sample10() {
+		System.out.println("After Test");
+	}
+	@Test
+	public void sample11() {
+		System.out.println("Test1");
+	}
+	@Test
+	public void sample12() {
+		System.out.println("Test2");
+	}
+}

@@ -1,0 +1,6 @@
+name: Suite
+tests:
+  - name: Test
+    classes:
+      - com.tcs.delta.billing.Launch
+
